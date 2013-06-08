@@ -8,12 +8,26 @@
 
 #import "WDAppDelegate.h"
 #import <PebbleKit/PebbleKit.h>
+#import <Firebase/Firebase.h>
 
 @interface WDAppDelegate () <PBPebbleCentralDelegate>
 @end
 
 @implementation WDAppDelegate {
-  PBWatch *_targetWatch;
+    PBWatch *_targetWatch;
+    Firebase *f;
+}
+
+- (void)upPressed {
+    [[f childByAppendingPath:@"up"] setValue:@"1"];
+}
+
+- (void)middlePressed {
+    [[f childByAppendingPath:@"middle"] setValue:@"1"];
+}
+
+- (void)downPressed {
+    [[f childByAppendingPath:@"down"] setValue:@"1"];
 }
 
 - (void)setTargetWatch:(PBWatch*)watch {
@@ -36,15 +50,16 @@
         
         [_targetWatch appMessagesAddReceiveUpdateHandler:^BOOL(PBWatch *w2, NSDictionary *update) {
             NSInteger which=[[[update allValues] objectAtIndex:0] integerValue];
+            NSLog(@"%d",which);
             switch(which) {
                 case 1:
-                    NSLog(@"Up");
+                    [self upPressed];
                     break;
                 case 2:
-                    NSLog(@"Middle");
+                    [self middlePressed];
                     break;
                 case 3:
-                    NSLog(@"Down");
+                    [self downPressed];
                     break;
                     
             }
@@ -64,6 +79,9 @@
 
   // Initialize with the last connected watch:
   [self setTargetWatch:[[PBPebbleCentral defaultCentral] lastConnectedWatch]];
+      
+  // Initialize firebase
+  f = [[Firebase alloc] initWithUrl:@"https://pebblecontrol.firebaseio.com/"];
   return YES;
 }
 
@@ -72,14 +90,14 @@
  */
 
 - (void)pebbleCentral:(PBPebbleCentral*)central watchDidConnect:(PBWatch*)watch isNew:(BOOL)isNew {
-  [self setTargetWatch:watch];
+    [self setTargetWatch:watch];
 }
 
 - (void)pebbleCentral:(PBPebbleCentral*)central watchDidDisconnect:(PBWatch*)watch {
-  [[[UIAlertView alloc] initWithTitle:@"Disconnected!" message:[watch name] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-  if (_targetWatch == watch || [watch isEqual:_targetWatch]) {
-    [self setTargetWatch:nil];
-  }
+    [[[UIAlertView alloc] initWithTitle:@"Disconnected!" message:[watch name] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    if (_targetWatch == watch || [watch isEqual:_targetWatch]) {
+        [self setTargetWatch:nil];
+    }
 }
 
 @end

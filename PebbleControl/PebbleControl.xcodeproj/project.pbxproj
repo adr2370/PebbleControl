@@ -27,6 +27,7 @@
 		4556A1581762DF47008C9582 /* WDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4556A1511762DF47008C9582 /* WDAppDelegate.m */; };
 		4556A15A1762DFAC008C9582 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A1591762DFAC008C9582 /* PebbleKit.framework */; };
 		4556A15C1762DFBC008C9582 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A15B1762DFBB008C9582 /* PebbleVendor.framework */; };
+		45DAA4611763101F00B346F2 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DAA4601763101F00B346F2 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		4556A1511762DF47008C9582 /* WDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAppDelegate.m; sourceTree = "<group>"; };
 		4556A1591762DFAC008C9582 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = ../../iOS/PebbleKit.framework; sourceTree = "<group>"; };
 		4556A15B1762DFBB008C9582 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = ../../iOS/PebbleVendor.framework; sourceTree = "<group>"; };
+		45DAA4601763101F00B346F2 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				1030EB9616C4DECC006F46EA /* ExternalAccessory.framework in Frameworks */,
 				1030EB5E16C4DB1A006F46EA /* UIKit.framework in Frameworks */,
 				1030EB6216C4DB1A006F46EA /* CoreGraphics.framework in Frameworks */,
+				45DAA4611763101F00B346F2 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		1030EB5116C4DB1A006F46EA = {
 			isa = PBXGroup;
 			children = (
+				45DAA4601763101F00B346F2 /* Firebase.framework */,
 				4556A15B1762DFBB008C9582 /* PebbleVendor.framework */,
 				4556A1591762DFAC008C9582 /* PebbleKit.framework */,
 				4556A1451762DB72008C9582 /* Security.framework */,
@@ -292,6 +296,7 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/..\"",
 					"\"$(SRCROOT)/../../iOS\"",
+					"\"$(SRCROOT)/../../../../../Downloads\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PebbleControl/PebbleControl-Prefix.pch";
@@ -310,6 +315,7 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/..\"",
 					"\"$(SRCROOT)/../../iOS\"",
+					"\"$(SRCROOT)/../../../../../Downloads\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PebbleControl/PebbleControl-Prefix.pch";
