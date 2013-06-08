@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1030EB5E16C4DB1A006F46EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030EB5D16C4DB1A006F46EA /* UIKit.framework */; };
+		1030EB6016C4DB1A006F46EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030EB5F16C4DB1A006F46EA /* Foundation.framework */; };
+		1030EB6216C4DB1A006F46EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030EB6116C4DB1A006F46EA /* CoreGraphics.framework */; };
+		1030EB9616C4DECC006F46EA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030EB9516C4DECC006F46EA /* ExternalAccessory.framework */; };
+		104820FE16C5970F00F2AFC8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 104820FD16C5970F00F2AFC8 /* libz.dylib */; };
+		1048210016C5972E00F2AFC8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */; };
+		1048210216C5973B00F2AFC8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210116C5973B00F2AFC8 /* CoreMotion.framework */; };
+		1048210416C5974800F2AFC8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210316C5974800F2AFC8 /* MessageUI.framework */; };
+		1092225B1738302F001117B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1092225A1738302F001117B2 /* CoreLocation.framework */; };
+		4556A1421762DB63008C9582 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A1411762DB63008C9582 /* libicucore.dylib */; };
+		4556A1441762DB6C008C9582 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A1431762DB6C008C9582 /* CFNetwork.framework */; };
+		4556A1461762DB72008C9582 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A1451762DB72008C9582 /* Security.framework */; };
+		4556A1521762DF47008C9582 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4556A1481762DF47008C9582 /* Default-568h@2x.png */; };
+		4556A1531762DF47008C9582 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4556A1491762DF47008C9582 /* Default.png */; };
+		4556A1541762DF47008C9582 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4556A14A1762DF47008C9582 /* Default@2x.png */; };
+		4556A1551762DF47008C9582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4556A14B1762DF47008C9582 /* InfoPlist.strings */; };
+		4556A1561762DF47008C9582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4556A14D1762DF47008C9582 /* main.m */; };
+		4556A1581762DF47008C9582 /* WDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4556A1511762DF47008C9582 /* WDAppDelegate.m */; };
+		4556A15A1762DFAC008C9582 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A1591762DFAC008C9582 /* PebbleKit.framework */; };
+		4556A15C1762DFBC008C9582 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4556A15B1762DFBB008C9582 /* PebbleVendor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1030EB5A16C4DB1A006F46EA /* PebbleControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PebbleControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1030EB5D16C4DB1A006F46EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1030EB5F16C4DB1A006F46EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1030EB6116C4DB1A006F46EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1030EB9516C4DECC006F46EA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		104820FD16C5970F00F2AFC8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1048210116C5973B00F2AFC8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1048210316C5974800F2AFC8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = ../PebbleKit.framework; sourceTree = "<group>"; };
+		1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = ../PebbleVendor.framework; sourceTree = "<group>"; };
+		1092225A1738302F001117B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4556A13F1762DB4B008C9582 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		4556A1411762DB63008C9582 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4556A1431762DB6C008C9582 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4556A1451762DB72008C9582 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4556A1481762DF47008C9582 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4556A1491762DF47008C9582 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4556A14A1762DF47008C9582 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4556A14C1762DF47008C9582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4556A14D1762DF47008C9582 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4556A14E1762DF47008C9582 /* PebbleControl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PebbleControl-Info.plist"; sourceTree = "<group>"; };
+		4556A14F1762DF47008C9582 /* PebbleControl-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PebbleControl-Prefix.pch"; sourceTree = "<group>"; };
+		4556A1501762DF47008C9582 /* WDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAppDelegate.h; sourceTree = "<group>"; };
+		4556A1511762DF47008C9582 /* WDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAppDelegate.m; sourceTree = "<group>"; };
+		4556A1591762DFAC008C9582 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = ../../iOS/PebbleKit.framework; sourceTree = "<group>"; };
+		4556A15B1762DFBB008C9582 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = ../../iOS/PebbleVendor.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1030EB5716C4DB1A006F46EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4556A15C1762DFBC008C9582 /* PebbleVendor.framework in Frameworks */,
+				4556A15A1762DFAC008C9582 /* PebbleKit.framework in Frameworks */,
+				1030EB6016C4DB1A006F46EA /* Foundation.framework in Frameworks */,
+				4556A1461762DB72008C9582 /* Security.framework in Frameworks */,
+				4556A1441762DB6C008C9582 /* CFNetwork.framework in Frameworks */,
+				4556A1421762DB63008C9582 /* libicucore.dylib in Frameworks */,
+				1092225B1738302F001117B2 /* CoreLocation.framework in Frameworks */,
+				1048210416C5974800F2AFC8 /* MessageUI.framework in Frameworks */,
+				1048210216C5973B00F2AFC8 /* CoreMotion.framework in Frameworks */,
+				1048210016C5972E00F2AFC8 /* CoreBluetooth.framework in Frameworks */,
+				104820FE16C5970F00F2AFC8 /* libz.dylib in Frameworks */,
+				1030EB9616C4DECC006F46EA /* ExternalAccessory.framework in Frameworks */,
+				1030EB5E16C4DB1A006F46EA /* UIKit.framework in Frameworks */,
+				1030EB6216C4DB1A006F46EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1030EB5116C4DB1A006F46EA = {
+			isa = PBXGroup;
+			children = (
+				4556A15B1762DFBB008C9582 /* PebbleVendor.framework */,
+				4556A1591762DFAC008C9582 /* PebbleKit.framework */,
+				4556A1451762DB72008C9582 /* Security.framework */,
+				4556A1431762DB6C008C9582 /* CFNetwork.framework */,
+				4556A1411762DB63008C9582 /* libicucore.dylib */,
+				4556A1471762DF47008C9582 /* PebbleControl */,
+				1030EB5C16C4DB1A006F46EA /* Frameworks */,
+				1030EB5B16C4DB1A006F46EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1030EB5B16C4DB1A006F46EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1030EB5A16C4DB1A006F46EA /* PebbleControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1030EB5C16C4DB1A006F46EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4556A13F1762DB4B008C9582 /* Firebase.framework */,
+				1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */,
+				1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */,
+				1092225A1738302F001117B2 /* CoreLocation.framework */,
+				1048210316C5974800F2AFC8 /* MessageUI.framework */,
+				1048210116C5973B00F2AFC8 /* CoreMotion.framework */,
+				104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */,
+				104820FD16C5970F00F2AFC8 /* libz.dylib */,
+				1030EB9516C4DECC006F46EA /* ExternalAccessory.framework */,
+				1030EB5D16C4DB1A006F46EA /* UIKit.framework */,
+				1030EB5F16C4DB1A006F46EA /* Foundation.framework */,
+				1030EB6116C4DB1A006F46EA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4556A1471762DF47008C9582 /* PebbleControl */ = {
+			isa = PBXGroup;
+			children = (
+				4556A1481762DF47008C9582 /* Default-568h@2x.png */,
+				4556A1491762DF47008C9582 /* Default.png */,
+				4556A14A1762DF47008C9582 /* Default@2x.png */,
+				4556A14B1762DF47008C9582 /* InfoPlist.strings */,
+				4556A14D1762DF47008C9582 /* main.m */,
+				4556A14E1762DF47008C9582 /* PebbleControl-Info.plist */,
+				4556A14F1762DF47008C9582 /* PebbleControl-Prefix.pch */,
+				4556A1501762DF47008C9582 /* WDAppDelegate.h */,
+				4556A1511762DF47008C9582 /* WDAppDelegate.m */,
+			);
+			path = PebbleControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1030EB5916C4DB1A006F46EA /* PebbleControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1030EB8B16C4DB1B006F46EA /* Build configuration list for PBXNativeTarget "PebbleControl" */;
+			buildPhases = (
+				1030EB5616C4DB1A006F46EA /* Sources */,
+				1030EB5716C4DB1A006F46EA /* Frameworks */,
+				1030EB5816C4DB1A006F46EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PebbleControl;
+			productName = SportsDemo;
+			productReference = 1030EB5A16C4DB1A006F46EA /* PebbleControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1030EB5216C4DB1A006F46EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pebble Technology Corp.";
+			};
+			buildConfigurationList = 1030EB5516C4DB1A006F46EA /* Build configuration list for PBXProject "PebbleControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1030EB5116C4DB1A006F46EA;
+			productRefGroup = 1030EB5B16C4DB1A006F46EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1030EB5916C4DB1A006F46EA /* PebbleControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1030EB5816C4DB1A006F46EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4556A1521762DF47008C9582 /* Default-568h@2x.png in Resources */,
+				4556A1531762DF47008C9582 /* Default.png in Resources */,
+				4556A1541762DF47008C9582 /* Default@2x.png in Resources */,
+				4556A1551762DF47008C9582 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1030EB5616C4DB1A006F46EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4556A1561762DF47008C9582 /* main.m in Sources */,
+				4556A1581762DF47008C9582 /* WDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4556A14B1762DF47008C9582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4556A14C1762DF47008C9582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1030EB8916C4DB1A006F46EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1030EB8A16C4DB1A006F46EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1030EB8C16C4DB1B006F46EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../../iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PebbleControl/PebbleControl-Prefix.pch";
+				INFOPLIST_FILE = "PebbleControl/PebbleControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = PebbleControl;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1030EB8D16C4DB1B006F46EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../../iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PebbleControl/PebbleControl-Prefix.pch";
+				INFOPLIST_FILE = "PebbleControl/PebbleControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = PebbleControl;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1030EB5516C4DB1A006F46EA /* Build configuration list for PBXProject "PebbleControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1030EB8916C4DB1A006F46EA /* Debug */,
+				1030EB8A16C4DB1A006F46EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1030EB8B16C4DB1B006F46EA /* Build configuration list for PBXNativeTarget "PebbleControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1030EB8C16C4DB1B006F46EA /* Debug */,
+				1030EB8D16C4DB1B006F46EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1030EB5216C4DB1A006F46EA /* Project object */;
+}
