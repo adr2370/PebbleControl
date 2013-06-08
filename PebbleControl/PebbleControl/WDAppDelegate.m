@@ -16,18 +16,19 @@
 @implementation WDAppDelegate {
     PBWatch *_targetWatch;
     Firebase *f;
+    UILabel *text;
 }
 
 - (void)upPressed {
-    [[f childByAppendingPath:@"up"] setValue:@"1"];
+    [[f childByAppendingPath:[NSString stringWithFormat:@"%@/up",[_targetWatch serialNumber]]] setValue:@"1"];
 }
 
 - (void)middlePressed {
-    [[f childByAppendingPath:@"middle"] setValue:@"1"];
+    [[f childByAppendingPath:[NSString stringWithFormat:@"%@/middle",[_targetWatch serialNumber]]] setValue:@"1"];
 }
 
 - (void)downPressed {
-    [[f childByAppendingPath:@"down"] setValue:@"1"];
+    [[f childByAppendingPath:[NSString stringWithFormat:@"%@/down",[_targetWatch serialNumber]]] setValue:@"1"];
 }
 
 - (void)setTargetWatch:(PBWatch*)watch {
@@ -47,10 +48,10 @@
       uint8_t bytes[] = {0x23, 0x70, 0x23, 0x70, 0x23, 0x70, 0x23, 0x70, 0x23, 0x70, 0x23, 0x70, 0x23, 0x70, 0x23, 0x70};
       NSData *uuid = [NSData dataWithBytes:bytes length:sizeof(bytes)];
       [watch appMessagesSetUUID:uuid];
+        [text setText:[NSString stringWithFormat:@"%@",[_targetWatch serialNumber]]];
         
         [_targetWatch appMessagesAddReceiveUpdateHandler:^BOOL(PBWatch *w2, NSDictionary *update) {
             NSInteger which=[[[update allValues] objectAtIndex:0] integerValue];
-            NSLog(@"%d",which);
             switch(which) {
                 case 1:
                     [self upPressed];
@@ -73,7 +74,16 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    text = [UILabel new];
+    [text setText:@"Connecting..."];
+    [text setTextAlignment:UITextAlignmentCenter];
+    [text setFrame:self.window.bounds];
+    [self.window addSubview:text];
+    
+    [self.window makeKeyAndVisible];
+    
   // We'd like to get called when Pebbles connect and disconnect, so become the delegate of PBPebbleCentral:
   [[PBPebbleCentral defaultCentral] setDelegate:self];
 
