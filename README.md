@@ -1,6 +1,6 @@
 # PebbleControl
 
-This is a pebble app, iOS app, and browser extension that allows you to scroll up and down your webpage with a pebble watch. You can also play and pause youtube videos.
+This is a pebble app, iOS app, and browser extension that allows you to scroll up and down your webpage with a pebble watch. You can also play/pause youtube and pandora.
 
 #### How to install
 
@@ -8,6 +8,8 @@ This is a pebble app, iOS app, and browser extension that allows you to scroll u
 *   Run the iOS app in Xcode
 *   Upload the zip file `PebbleControlExtension.zip` to a new extension on [crossrider.com](http://crossrider.com/)
 *   Follow the instructions to publish it to staging
+*   Click on the extension's icon and type in the number shown on the iOS app and hit enter
+*   You should now be able to scroll your browser and play/pause youtube and pandora.
 
 You can probably build the iOS app and browser extension however you want, but above is what I know works.
 
